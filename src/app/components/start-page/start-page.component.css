@@ -1,0 +1,83 @@
+.page {
+  color: white;
+  background-image: url('./../../../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 60px 60px;
+  background: rgba(87,92,86, 0.3);
+  /* background: rgba(244,231,201, 0.1); */
+}
+
+.toolbox
+::placeholder {
+  color: white;
+}
+
+.toolbox
+.form-control {
+  border-color: white;
+  background-color: transparent;
+  color: white;
+}
+
+.toolbox
+.form-control:focus {
+  box-shadow: 0 0 0 0;
+  border-color: #ADEEE3;
+  background-color: rgba(48,55,55, 0.5);
+  color: white;
+}
+
+.toolbox
+.form-control:hover {
+  border-color: #ADEEE3;
+}
+
+.toolbox
+.shortcuts {
+  margin-top: 30px;  
+}
+
+.toolbox
+.shortcuts h5 {
+  color: #ADEEE3;
+}
+
+.toolbox
+.shortcuts a {
+  color: white;
+  /* color: #B9C7C0; */
+}
+
+.toolbox
+.shortcuts a:hover {
+  color: #ADEEE3;
+}
+
+@media (max-width: 550px) {
+  .info {
+    padding-top: 30px;
+  }
+
+  .toolbox {
+    padding: 20px 30px;
+  }
+
+  .toolbox
+  .shortcuts {
+    margin-top: 5px;  
+  }
+}
