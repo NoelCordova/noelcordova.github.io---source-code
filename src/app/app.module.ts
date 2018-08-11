@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-    StartPageComponent
+    StartPageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+header {
+  padding: 30px 20px;
+  display: flex;
+}
+
+header
+h5 {
+  margin: unset;
+  color: crimson;
+}
+
+header
+ul {
+  list-style: none;
+}
+
+header
+a {
+  color: black;
+}
