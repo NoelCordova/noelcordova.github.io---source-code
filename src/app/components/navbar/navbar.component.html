@@ -1,10 +1,18 @@
 <header>
-  <h5>dmon</h5>
-
-  <ul>
-    <li>
-      <a routerLink="startpage">startpage</a>
-    </li>
-  </ul>
-
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #212122">
+    <a class="navbar-brand" routerLink="/">
+      <img src="https://png.icons8.com/ios/100/000000/icosahedron-filled.png" height="30" width="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/startpage">startpage</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

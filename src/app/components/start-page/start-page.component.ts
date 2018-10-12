@@ -7,17 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartPageComponent implements OnInit {
 
-  date: Date = new Date();
-  hrs: number = this.date.getHours();
-  msg: string = "";
+  date:any;
+  hrs:any;
+  msg:any;
 
-  constructor() {
-    if ( this.hrs >= 5 && this.hrs < 12 ) this.msg = "Good morning!";
-    if ( this.hrs >= 12 && this.hrs < 17 ) this.msg = "Good afternoon!";
-    if ( this.hrs >= 17 && this.hrs < 21 ) this.msg = "Good evening!";
-    if ( this.hrs >= 21 && this.hrs < 5 ) this.msg = "Good night!";
+  constructor() { }
+
+  ngOnInit() {
+    this.setup();
   }
 
-  ngOnInit() { }
+  setup():any {
+    const date = new Date();
+    const hrs = date.getHours();
+    let msg = '';
+
+    if (hrs >= 5 && hrs < 12) msg = "Good morning!";
+    else if (hrs >= 12 && hrs < 17) msg = "Good afternoon!";
+    else if (hrs >= 17 && hrs < 21) msg = "Good evening!";
+    else msg = "Good night!";
+
+    this.date = date;
+    this.hrs = hrs;
+    this.msg = msg;
+  }
 
 }
